@@ -53,7 +53,7 @@ class CustomTextField : UITextField {
             
         case .password:
             placeholder = "Your password"
-//            isSecureTextEntry = true
+            isSecureTextEntry = true
         }
         let customLightGrayColor = UIColor(hex: "#56585BFF")
         
