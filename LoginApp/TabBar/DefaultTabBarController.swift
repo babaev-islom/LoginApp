@@ -31,7 +31,8 @@ fileprivate func makeTabVC(vc: UIViewController, title: String? = nil, image: UI
     let tab = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
     tab.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
     let nc = UINavigationController(rootViewController: vc)
-    nc.navigationBar.isHidden = true
+    nc.navigationBar.topItem?.title = title
+    nc.navigationBar.isTranslucent = true
     nc.tabBarItem = tab
     
     return nc
